@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 
-main {
+header,
+footer,
+.grid {
     max-width: 840px;
+    margin: 0 auto;
 }
 
 header {
@@ -63,16 +66,22 @@ footer {
 nav {
     background-color: #333;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav a {
     color: white;
     padding: 10px;
     display: block;
+    text-decoration: none;
 }
 
 h1 {
     color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
 }
 
 /*Class selectors*/
@@ -80,4 +89,20 @@ h1 {
     margin: 1rem;
     padding: 1rem;
     background-color: rgb(216, 216, 224);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    align-items: start;
+    gap: 20px;
+}
+
+main {
+    grid-column: 2;
+}
+
+aside {
+    grid-column: 1;
+    grid-row: 1;
 }
