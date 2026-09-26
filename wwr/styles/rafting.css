@@ -41,6 +41,9 @@ article {
 
 /* Header */
 header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
     background-color: var(--primary-color);
     color: #fff;
     padding: 15px;
@@ -57,6 +60,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    justify-content: flex-end;
 }
 
 nav ul li a {
@@ -120,6 +124,50 @@ section h2 {
     margin: 0 0 10px 0;
 }
 
+.history-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 16px;
+}
+
+.history-content p {
+    flex: 1;
+}
+
+.history-content img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 16px;
+    flex-wrap: wrap;
+}
+
+.adventure-gallery figure {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+    margin: 0;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
 section p {
     padding: 8px 16px;
 }
@@ -135,7 +183,7 @@ footer p {
 
 .socialmedia {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     gap: 15px;
     margin-top: 10px;
 }
