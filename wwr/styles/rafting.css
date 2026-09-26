@@ -1,6 +1,6 @@
 :root {
     --primary-color: #14497a;
-    --secondary-color: #4a90c2;
+    --secondary-color: #2e6a8f;
     --accent1-color: #1c1c1c;
     --accent2-color: #f4b942;
     --heading-font: "Georgia", "Times New Roman", serif;
@@ -92,7 +92,7 @@ nav ul li a:hover {
     text-align: center;
     opacity: 0.85;
     background-color: var(--accent2-color);
-    color: #fff;
+    color: var(--accent1-color);
 }
 
 .hero article {
