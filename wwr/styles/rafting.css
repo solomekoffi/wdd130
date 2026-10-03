@@ -42,7 +42,7 @@ article {
 /* Header */
 header {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto auto;
     align-items: center;
     background-color: var(--primary-color);
     color: #fff;
@@ -58,9 +58,9 @@ header img {
 nav ul {
     list-style: none;
     display: flex;
-    flex-direction: column;
-    gap: 5px;
-    justify-content: flex-end;
+    flex-direction: row;
+    gap: 24px;
+
 }
 
 nav ul li a {
@@ -195,4 +195,117 @@ footer p {
 .socialmedia img {
     width: 40px;
     height: 40px;
+}
+
+/* Contact page */
+.company-info {
+    text-align: center;
+}
+
+.company-info address {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.company-info a {
+    color: var(--primary-color);
+}
+
+.contact-main {
+    display: flex;
+    gap: 20px;
+    padding: 16px;
+}
+
+.map {
+    flex: 1;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    border: 0;
+}
+
+.contact-main form {
+    flex: 1;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px 12px;
+    align-items: center;
+}
+
+.contact-main label[for="message"],
+.contact-main textarea,
+.contact-main fieldset,
+.contact-main form > label:last-of-type,
+.contact-main button {
+    grid-column: 1 / -1;
+}
+
+.contact-main input[type="text"],
+.contact-main input[type="email"],
+.contact-main textarea {
+    width: 100%;
+    padding: 6px;
+}
+
+.contact-main fieldset {
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.contact-main legend {
+    float: left;
+    width: 6.5em;
+    flex-shrink: 0;
+}
+
+.contact-main fieldset label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.contact-main button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-main button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Employees */
+.employees {
+    background-color: #f4f4f4;
+    border: 1px solid var(--accent1-color);
+}
+
+.employees .adventure-gallery {
+    justify-content: space-around;
+}
+
+.employees figure {
+    flex: 0 0 200px;
+}
+
+.employees img {
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.contact-main {
+    margin-bottom: 24px;
+}
+
+.contact-main fieldset label:last-child {
+    margin-bottom: 0;
 }

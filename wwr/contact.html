@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Contact Rapids, your white water rafting company. Find our address, phone number and email, or send us a message about reservations and trips.">
+    <meta name="author" content="Elie Koffi SOLOME">
+    <title>Contact Us | Rapids</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rapids Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="company-info">
+            <h1>Rapids</h1>
+            <address>
+                123 Main River Street<br>
+                Kolob, California<br>
+                <a href="tel:+19999999999">+1 999 999 9999</a><br>
+                <a href="mailto:info@whitewater.com">info@whitewater.com</a>
+            </address>
+        </section>
+        <div class="contact-main">
+            <div class="map">
+
+                <iframe src="https://www.google.com/maps?q=Kolob,California&output=embed"
+                  width="300" height="250" title="Map of Rapids location" loading="lazy" button
+                  type="submit">Get in Touch!</button>
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <form action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Message Purpose</legend>
+                    <div class="purpose-options">
+                        <label><input type="radio" name="purpose" value="general" checked> General
+                            Inquiry</label>
+                        <label><input type="radio" name="purpose" value="reservation"> Reservation
+                            Question</label>
+                        <label><input type="radio" name="purpose" value="suggestion"> Website
+                            Suggestion</label>
+                    </div>
+                </fieldset>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Type here"></textarea>
+
+                <label>
+                    <input type="checkbox" name="newsletter" value="yes">
+                    Please subscribe me to the monthly newsletter
+                </label>
+                <button type="submit">Get in Touch!</button>
+
+            </form>
+        </div>
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+            <div class="adventure-gallery">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Portrait of Sarah, head guide" width="200"
+                      height="200">
+                    <figcaption>Sarah Miller, Head Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Portrait of David, safety coordinator"
+                      width="200" height="200">
+                    <figcaption>David Brown, Safety Coordinator</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Portrait of Emma, customer service manager"
+                      width="200" height="200">
+                    <figcaption>Emma Davis, Customer Service Manager</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rapids | Elie Koffi SOLOME</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook Icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.png" alt="LinkedIn Icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram Icon">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
