@@ -38,10 +38,8 @@
             <div class="map">
 
                 <iframe src="https://www.google.com/maps?q=Kolob,California&output=embed"
-                  width="300" height="250" title="Map of Rapids location" loading="lazy" button
-                  type="submit">Get in Touch!</button>
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                  width="300" height="250" title="Map of Rapids location" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <form action="#" method="post">
                 <label for="name">Name</label>
@@ -53,11 +51,14 @@
                 <fieldset>
                     <legend>Message Purpose</legend>
                     <div class="purpose-options">
-                        <label><input type="radio" name="purpose" value="general" checked> General
+                        <label><input type="radio" id="general" name="purpose" value="general"
+                              checked> General
                             Inquiry</label>
-                        <label><input type="radio" name="purpose" value="reservation"> Reservation
+                        <label><input type="radio" id="reservation" name="purpose"
+                              value="reservation"> Reservation
                             Question</label>
-                        <label><input type="radio" name="purpose" value="suggestion"> Website
+                        <label><input type="radio" id="suggestion" name="purpose"
+                              value="suggestion"> Website
                             Suggestion</label>
                     </div>
                 </fieldset>
@@ -66,7 +67,7 @@
                 <textarea id="message" name="message" rows="5" placeholder="Type here"></textarea>
 
                 <label>
-                    <input type="checkbox" name="newsletter" value="yes">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
                     Please subscribe me to the monthly newsletter
                 </label>
                 <button type="submit">Get in Touch!</button>

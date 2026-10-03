@@ -215,6 +215,7 @@ footer p {
     display: flex;
     gap: 20px;
     padding: 16px;
+    margin-bottom: 24px;
 }
 
 .map {
@@ -300,12 +301,4 @@ footer p {
     height: 200px;
     object-fit: cover;
     object-position: top;
-}
-
-.contact-main {
-    margin-bottom: 24px;
-}
-
-.contact-main fieldset label:last-child {
-    margin-bottom: 0;
 }
